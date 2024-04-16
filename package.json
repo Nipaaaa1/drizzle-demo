@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node ./dist/server.js",
     "dev": "tsx watch ./server.ts",
     "db:generate": "drizzle-kit generate:pg",
     "db:migrate": "tsx ./src/drizzle/migrate.ts"
@@ -12,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/cors": "^2.8.17",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.8",
