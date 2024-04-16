@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./dist/server.js",
+    "build": "tsc --build",
     "dev": "tsx watch ./server.ts",
     "db:generate": "drizzle-kit generate:pg",
     "db:migrate": "tsx ./src/drizzle/migrate.ts"
